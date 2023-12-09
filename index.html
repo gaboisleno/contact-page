@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;800&display=swap" rel="stylesheet">
-        
+    <link rel="stylesheet" href="style.css">
     <title>Contact Page</title>
 </head>
+
 <body>
-    <div class="navbar">
+    <div class="logo">
         <img src="images/contact-form-icon.svg" alt="">
     </div>
-    
-    <div class="header">
-        <h1 class="header__title">Interested in our business pricing?</h1>
-        <h2 class="header__subtitle">Fill out the form to view details and we’ll contact you as soon as possible.</h2>
-    </div>
 
-    <div class="body">
+    <h1>Interested in our business pricing?</h1>
+    <h2>Fill out the form to view details and we’ll contact you as soon as possible.</h2>
+
+    <div class="content">
 
         <div class="form">
-            <div class="form__control">
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Ethan Johnson">
+            <div class="row">
+                <div class="form__control">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Ethan Johnson">
+                </div>
+
+                <div class="form__control">
+                    <label for="email">Company Email</label>
+                    <input id="email" type="email" placeholder="ethan@johnson.com">
+                </div>
             </div>
 
-            <div class="form__control">
-                <label for="email">Company Email</label>
-                <input id="email" type="email" placeholder="ethan@johnson.com">
-            </div>
-            
-            <div class="form__control">
-                <label for="context">Company Size</label>
-                <select id="context">
-                    <option>1-10 employees</option>
-                    <option>10-20 employees</option>
-                    <option>20-30 employees</option>
-                    <option>30-40 employees</option>
-                    <option>40-50 employees</option>
-                    <option>50-100 employees</option>
-                    <option>+100 employees</option>
-                </select>
-            </div>
-            
-            <div class="form__control">
-                <label for="subject">Subject</label>
-                <select id="subject">
-                    <option>Building landing pages</option>
-                    <option>Building full pages</option>
-                </select>
-            </div>
-            
-            <div class="form__control full_width">
-                <label for="message">Message</label>
-                <textarea id="message" cols="30" rows="7">50-100 Employees</textarea>
+            <div class="row">
+                <div class="form__control">
+                    <label for="context">Company Size</label>
+                    <select id="context">
+                        <option>1-10 employees</option>
+                        <option>10-20 employees</option>
+                        <option>20-30 employees</option>
+                        <option>30-40 employees</option>
+                        <option>40-50 employees</option>
+                        <option>50-100 employees</option>
+                        <option>+100 employees</option>
+                    </select>
+                </div>
+
+                <div class="form__control">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option>Building landing pages</option>
+                        <option>Building full pages</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="form__control full_width">
-                <button class="submit">Contact Sales</button>
+            <div class="row">
+                <div class="form__control">
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="7">50-100 Employees</textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form__control full_width">
+                    <button class="submit">Contact Sales</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
